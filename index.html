@@ -4,33 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
+      <ul class="anchor">
+        <li><a href="#page-1">page1</a></li>
+        <li><a href="#page-2">page2</a></li>
+        <li><a href="#page-3">page3</a></li>
+        <li><a href="#page-4">page4</a></li>
+        <li><a href="#page-5">page5</a></li>
+      </ul>
       <!-- 메인화면 -->
-      <section class="first">
-        <div class="sidebar">
-          <nav class="navi">
-            <h1>여기에 뭘넣지</h1>
-            <ul class="navi-list">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-            </ul>
-          </nav>
-          <div class="info">
-            <p>update:날짜</p>
+      <section class="first" data-anchor="Page 1">
+        <div class="main">
+          <div class="photo" data-aos="fade-right" data-aos-duration="1000"></div>
+          <div class="main-detail" data-aos="fade-left" data-aos-duration="1000">
+            <div class="info">
+              <p>shskse5@naver.com</p>
+              <p>update:날짜</p>
+            </div>
+            <div class="main-detail-title">
+              <p>신기술과 기능구현에 관심이 많은</p>
+              <p><span>최상혁</span> 입니다.</p>
+            </div>
+            <div class="main-detail-info">
+              <p>프론트엔드 개발자를 희망하고 있습니다</p>
+              <p>프론트엔드 개발자를 희망하고 있습니다</p>
+              <p>프론트엔드 개발자를 희망하고 있습니다</p>
+            </div>
           </div>
         </div>
-        <div class="main">
-          <div class="photo"></div>
-          <div class="main-detail"></div>
+      </section>
+      <section class="second" data-anchor="Page 2">
+        <div class="green">
+          <div class="green-photo"></div>
+          <div class="green-info">
+            <p>2022-08-31 - 2023-02-23</p>
+            <p>기업요구를 반영한 디지털비즈니스 웹앱(UX)디자인 & 개발자 양성과정</p>
+            <p> 위 과정을 들으며 ~~~~</p>
+          </div>
+        </div>
+        <div class="education">
+          <div class="education-photo"></div>
+          <div class="education-info">
+            <p>영남고등학교 ??기 졸업</p>
+            <p>경북대학교 생물산업기계공학과 중퇴</p>
+          </div>
         </div>
       </section>
+      <section class="portfolio" data-anchor="Page 3">
+        <div class="pf-box">  </div>
+        <div class="pf-box"></div>
+        <div class="pf-box"></div>
+        <div class="pf-box"></div>
+      </section>
+      <section class="second2" data-anchor="Page 4"></section>
+      <section class="second3" data-anchor="Page 5"></section>
     </div>
   </body>
+  <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/js/index.js"></script>
 </html>
