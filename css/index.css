@@ -36,6 +36,7 @@ html {
   align-items: center;
   justify-content: space-between;
   color: black;
+  outline: 0;
 }
 
 /* 첫화면 */
@@ -170,13 +171,104 @@ html {
 }
 .pf-box {
   width: 400px;
-  height: 600px;
+  height: 650px;
   margin: 0 auto;
   margin-top: 200px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.pf-box-photo {
+  background-color:white;
+  width: 100%;
+  height: 300px;
+}
+/* swiper */
+.mySwiper1,.mySwiper2 {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  height: 100%;
+}
+.first1 {
+  background: url('../images/first1.png') no-repeat center;
+  background-size: contain;
+}
+.first2 {
+  background: url('../images/first2.png') no-repeat center;
+  background-size: contain;
+}
+.first3 {
+  background: url('../images/first3.png') no-repeat center;
+  background-size: contain;
+}
+.first4 {
+  background: url('../images/first4.png') no-repeat center;
+  background-size: contain;
+}
+.first5 {
+  background: url('../images/first5.png') no-repeat center;
+  background-size: contain;
+}
+.hyft1 {
+  background: url('../images/hyft1.png') no-repeat center;
+  background-size: contain;
+}
+.hyft2 {
+  background: url('../images/hyft2.png') no-repeat center;
+  background-size: contain;
+}
+.hyft3 {
+  background: url('../images/hyft3.png') no-repeat center;
+  background-size: contain;
+}
+.hyft4 {
+  background: url('../images/hyft4.png') no-repeat center;
+  background-size: contain;
+}
+.hyft5 {
+  background: url('../images/hyft5.png') no-repeat center;
+  background-size: contain;
+}
+.pf-box-info {
+  background-color: yellow;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
+}
+.pf-box-info h1{
+  font-weight: bold;
+  font-size: 28px;
+  margin: 20px;
+}
+.pf-box-info p {
+  margin-bottom: 10px;
+}
+.pf-box-btn {
+  background-color: brown;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 20px;
+}
+.pf-box-btn button {
+  padding: 7px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #222;
+  border: 0;
+  outline: 0;
 }
 
-
+/* 네번쨰 */
 .second2 {
   width: 100%;
   height: 100vh;

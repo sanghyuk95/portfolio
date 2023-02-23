@@ -1,6 +1,6 @@
 AOS.init();
 
-const $anchor = document.querySelectorAll('.anchor li')
+const $anchor = document.querySelectorAll(".anchor li");
 
 new Pageable(".wrapper", {
   animation: 800,
@@ -13,3 +13,13 @@ new Pageable(".wrapper", {
   },
 });
 
+new Swiper(".mySwiper1", {
+  slidesPerView: 1.5,
+  spaceBetween: 10,
+  freeMode: true,
+});
+new Swiper(".mySwiper2", {
+  slidesPerView: 1.5,
+  spaceBetween: 10,
+  freeMode: true,
+});
