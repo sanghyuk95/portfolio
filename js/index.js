@@ -23,3 +23,8 @@ new Swiper(".mySwiper2", {
   spaceBetween: 10,
   freeMode: true,
 });
+new Swiper(".mySwiper3", {
+  slidesPerView: 1.5,
+  spaceBetween: 10,
+  freeMode: true,
+});
