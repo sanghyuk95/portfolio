@@ -9,8 +9,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+    </style>
     <title>Document</title>
   </head>
   <body>
@@ -19,8 +28,6 @@
         <li><a href="#page-1">page1</a></li>
         <li><a href="#page-2">page2</a></li>
         <li><a href="#page-3">page3</a></li>
-        <li><a href="#page-4">page4</a></li>
-        <li><a href="#page-5">page5</a></li>
       </ul>
       <!-- 메인화면 -->
       <section class="first" data-anchor="Page 1">
@@ -37,7 +44,7 @@
           >
             <div class="info">
               <p>shskse5@naver.com</p>
-              <p>update:날짜</p>
+              <p>update:2023-03-02</p>
             </div>
             <div class="main-detail-title">
               <p>신기술과 기능구현에 관심이 많은</p>
@@ -45,8 +52,7 @@
             </div>
             <div class="main-detail-info">
               <p>프론트엔드 개발자를 희망하고 있습니다</p>
-              <p>프론트엔드 개발자를 희망하고 있습니다</p>
-              <p>프론트엔드 개발자를 희망하고 있습니다</p>
+              <p>꾸준히 공부하여 발전하는 개발자가 되도록 노력하겠습니다.</p>
             </div>
           </div>
         </div>
@@ -55,17 +61,17 @@
         <div class="green">
           <div class="green-photo"></div>
           <div class="green-info">
-            <p>2022-08-31 - 2023-02-23</p>
+            <p>2022/08 - 2023/02</p>
             <p>
               기업요구를 반영한 디지털비즈니스 웹앱(UX)디자인 & 개발자 양성과정
+              수료
             </p>
-            <p>위 과정을 들으며 ~~~~</p>
           </div>
         </div>
         <div class="education">
           <div class="education-photo"></div>
           <div class="education-info">
-            <p>영남고등학교 ??기 졸업</p>
+            <p>영남고등학교 63회 졸업</p>
             <p>경북대학교 생물산업기계공학과 중퇴</p>
           </div>
         </div>
@@ -85,12 +91,16 @@
           </div>
           <div class="pf-box-info">
             <h1>생로랑 리사이트</h1>
-            <p>학원에서 한 첫번째 팀 프로젝트입니다</p>
-            <p>첫 협업을 하며 기획의 중요성과 ~~</p>
-            <p>
-              맡은 파트 : 메인,제품전체,제품상세, <br />
-              매장찾기,고객서비스
-            </p>
+            <div class="pf-box-info-detail">
+              <p>학원에서 한 첫번째 팀 프로젝트입니다</p>
+              <p>
+                생로랑의 사이트가 다른 명품 사이트에 비하면 부족한 부분이 다수
+                보여 작업 하게 되었습니다.
+              </p>
+              <p>
+                맡은 파트 : 메인,제품전체,제품상세,매장찾기,<br />고객서비스
+              </p>
+            </div>
           </div>
           <div class="pf-box-btn">
             <a
@@ -114,18 +124,20 @@
           </div>
           <div class="pf-box-info">
             <h1>HYFT</h1>
-            <p>
-              두번째 협업 프로젝트로 감정을 주제로 해서 커뮤니티와 쇼핑몰이
-              결합된 사이트를 제작 하였습니다.
-            </p>
-            <p>
-              NodeJS와 mySQL을 사용해 실제 회원가입 및 게시판기능을 만들면서
-              백엔드에 대한 이해도가 높아졌습니다.
-            </p>
-            <p>
-              맡은파트 : 랜딩페이지,로그인,마이페이지,<br />매거진,헤더/푸터제작,백엔드
-              전체
-            </p>
+            <div class="pf-box-info-detail">
+              <p>
+                두번째 협업 프로젝트로 감정을 주제로 해서 커뮤니티와 쇼핑몰이
+                결합된 사이트를 제작 하였습니다.
+              </p>
+              <p>
+                NodeJS와 mySQL을 사용해 실제 회원가입 및 게시판기능을 만들면서
+                백엔드에 대한 이해도가 높아졌습니다.
+              </p>
+              <p>
+                맡은파트 : 랜딩페이지,로그인,마이페이지,<br />매거진,헤더/푸터제작,백엔드
+                전체
+              </p>
+            </div>
           </div>
           <div class="pf-box-btn">
             <a href="https://www.hyft.kr" target="_blank"
@@ -137,35 +149,53 @@
           <div class="pf-box-photo">
             <div class="swiper mySwiper3">
               <div class="swiper-wrapper">
-                <div class="swiper-slide weather1"></div>
-                <div class="swiper-slide weather2"></div>
-                <div class="swiper-slide weather3"></div>
-                <div class="swiper-slide weather4"></div>
-                <div class="swiper-slide weather5"></div>
+                <div class="swiper-slide design1"></div>
+                <div class="swiper-slide design2"></div>
+                <div class="swiper-slide design3"></div>
               </div>
             </div>
           </div>
-          <div class="pf-box-info">
-            <h1>리액트 웨더</h1>
-            <p>리액트와 노드js를 활용해 ~~~~~</p>
+          <div class="pf-box-info desgin-info">
+            <h1>포토샵,일러스트</h1>
+            <p>게이밍기어 브랜드 런칭 로고 공모전 제출작품</p>
+            <p>할리데이비슨 코리아 리사이트</p>
           </div>
-          <div class="pf-box-btn">
-            <a href="#"><button>보러가기</button></a>
+          <div class="pf-box-btn btn2">
+            <a href="./images/logo.jpg" target="_blank"
+              ><button>로고 보러가기</button></a
+            >
+            <a href="./images/resite.png" target="_blank"
+              ><button>리사이트 보러가기</button></a
+            >
           </div>
         </div>
         <div class="pf-box">
-          <div class="pf-box-photo">사진자리</div>
-          <div class="pf-box-info">
-            <h1>프로젝트 제목</h1>
-            <p>프로젝트 내용</p>
+          <div class="pf-box-photo">
+            <div class="swiper mySwiper4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ect1"></div>
+                <div class="swiper-slide ect2"></div>
+              </div>
+            </div>
           </div>
-          <div class="pf-box-btn">
-            <a href="#"><button>보러가기</button></a>
+          <div class="pf-box-info desgin-info">
+            <h1>기타작업물</h1>
+            <p>클론코딩 : 도시락통 사이트</p>
+            <p>
+              리액트 웨더 : 리액트를 사용해 날씨,chatGPT,번역api를 사용한 날씨에
+              따른 옷 추천 기능
+            </p>
+          </div>
+          <div class="pf-box-btn btn2">
+            <a href="https://sanghyuk95.github.io/dosiraktong/" target="_blank">
+              <button>클론코딩</button></a
+            >
+            <a href="./images/weather.mp4" target="_blank"
+              ><button>리엑트 웨더</button></a
+            >
           </div>
         </div>
       </section>
-      <section class="second2" data-anchor="Page 4"></section>
-      <section class="second3" data-anchor="Page 5"></section>
     </div>
   </body>
   <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
