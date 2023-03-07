@@ -141,6 +141,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .education {
   width: 100%;
@@ -180,7 +181,7 @@ button {
   width: 400px;
   height: 650px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 10%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -268,7 +269,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   padding-top: 0px;
 }
 .pf-box-info h1 {
