@@ -25,3 +25,14 @@ $choiceSolo.forEach((item,idx) => {
     })
   })
 })
+
+const $mast = document.querySelector('.mast')
+const $mastDetail = document.querySelector('.mast-detail')
+const $mastX = document.querySelector('.modal-x-btn')
+$mastDetail.addEventListener('click', () => {
+  $mast.classList.remove('active')
+})
+$mastX.addEventListener('click', () => {
+  $mast.classList.add('active')
+  
+})

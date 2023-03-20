@@ -41,6 +41,12 @@ body {
   margin: 0 auto;
   color: white;
 }
+@media (max-width: 1440px) {
+  .gnb {
+    width: 100%;
+    padding: 0 50px;
+  }
+}
 .gnb > ul {
   height: 100%;
   display: flex;
@@ -99,7 +105,7 @@ body {
   width: 300px;
   height: 340px;
   margin: 0 auto 30px;
-  background: url("../images/photo.jpg") no-repeat center;
+  background: url("../images/myphoto.png") no-repeat center;
   background-size: contain;
 }
 .main-left-info-intro {
@@ -271,6 +277,7 @@ body {
 }
 .team-detail-list-left img {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -382,9 +389,41 @@ body {
   align-items: center;
   gap: 30px;
 }
-.solo-detail-list-right-btn > a {
+.solo-detail-list-right-btn > a,
+.solo-detail-list-right-btn > div {
   color: white;
   padding: 10px 20px;
   background-color: red;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+/* 모달창 */
+.modal {
+  position: fixed;
+  width: 1280px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #eee;
+  z-index: 9999;
+  overflow: auto;
+}
+.modal.active {
+  display: none;
+}
+.modal-x {
+  position: sticky;
+  top: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+.modal-x > i {
+  font-size: 50px;
+}
+.modal-img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }

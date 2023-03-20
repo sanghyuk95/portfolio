@@ -4,211 +4,352 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
-    </style>
-    <title>프론트엔드 최상혁의 프로필</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/new.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="wrapper">
-      <ul class="anchor">
-        <li><a href="#page-1">page1</a></li>
-        <li><a href="#page-2">page2</a></li>
-        <li><a href="#page-3">page3</a></li>
-      </ul>
-      <!-- 메인화면 -->
-      <section class="first" data-anchor="Page 1">
-        <div class="main">
-          <div
-            class="photo"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          ></div>
-          <div
-            class="main-detail"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          >
-            <div class="info">
-              <p>shskse5@naver.com</p>
-              <p>update:2023-03-07</p>
+    <div class="topbar">
+      <nav class="gnb">
+        <h1>프론트엔드 최상혁 입니다.</h1>
+        <ul>
+          <li>
+            <a href="#main">
+              <i class="fa-solid fa-clipboard"></i>
+              <p>이력서</p>
+            </a>
+          </li>
+          <li>
+            <a href="#team">
+              <i class="fa-solid fa-users"></i>
+              <p>팀</p>
+            </a>
+          </li>
+          <li>
+            <a href="#solo">
+              <i class="fa-solid fa-user"></i>
+              <p>개인</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap">
+      <!-- 메인 -->
+      <section class="main" id="main">
+        <div class="main-wrap">
+          <div class="main-left">
+            <div class="main-left-info">
+              <div class="main-left-info-photo"></div>
+              <div class="main-left-info-intro">
+                <h1>최상혁</h1>
+                <p>
+                  프론트엔드,웹 퍼블리셔를 희망하고 있습니다.
+                  <br />
+                  꾸준히 공부하여 발전하는 개발자가 되겠습니다.
+                </p>
+              </div>
+              <ul class="main-left-info-detail">
+                <li>
+                  <i class="fa-solid fa-cake-candles"></i>
+                  <h2>1995.11.17</h2>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <h2>010-5429-7652</h2>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <h2>shskse5@naver.com</h2>
+                </li>
+                <li>
+                  <i class="fa-brands fa-github"></i>
+                  <h2>
+                    <a href="https://github.com/sanghyuk95" target="_blank"
+                      >github.com/sanghyuk95</a
+                    >
+                  </h2>
+                </li>
+              </ul>
             </div>
-            <div class="main-detail-title">
-              <p>신기술과 기능구현에 관심이 많은</p>
-              <p><span>최상혁</span> 입니다.</p>
-            </div>
-            <div class="main-detail-info">
-              <p>프론트엔드 개발자를 희망하고 있습니다</p>
-              <p>꾸준히 공부하여 발전하는 개발자가 되도록 노력하겠습니다.</p>
+          </div>
+          <div class="main-right">
+            <div class="main-right-personal">
+              <ul class="main-right-personal-box">
+                <h1>학력</h1>
+                <li>
+                  <p>영남고등학교 졸업</p>
+                  <p>2011.03 ~ 2014.02</p>
+                </li>
+                <li>
+                  <p>경북대학교 생물산업기계공학과 중퇴</p>
+                  <p>2014.03 ~ 2018.08</p>
+                </li>
+              </ul>
+              <ul class="main-right-personal-box">
+                <h1>대외활동</h1>
+                <li>
+                  <p>
+                    기업요구를 반영한 디지털비즈니스 웹앱(UX)디자인 & 개발자
+                    양성과정
+                    <br />
+                    기관 : 그린컴퓨터아트 학원
+                  </p>
+                  <p>2022.08 ~ 2023.02</p>
+                </li>
+              </ul>
+              <ul class="main-right-personal-box">
+                <h1>자격</h1>
+                <li>
+                  <p>자동차 운전 면허증(1종보통)</p>
+                  <p>2014.01</p>
+                </li>
+                <li>
+                  <p>그래픽기술자격(GTQ) 1급</p>
+                  <p>2022.11</p>
+                </li>
+              </ul>
+              <ul class="main-right-personal-box">
+                <h1>기술</h1>
+                <li class="skills">
+                  <img src="images/skill.png" alt="" />
+                  <img src="images/react.png" alt="" />
+                  <img src="images/ps.png" alt="" class="toobig" />
+                  <img src="images/ai.png" alt="" class="toobig" />
+                  <img src="images/figma.png" alt="" />
+                </li>
+                <li>
+                  HTML/CSS : 플렉스,그리드를 사용한 반응형 웹 제작 / 동적인 웹
+                  표현 가능
+                </li>
+                <li>
+                  JS : 동적 웹을 위한 코드 작성 가능 /
+                  노드js,express,mysql,aws,gcp 사용 웹 배포 경험
+                </li>
+                <li>React : 컴포넌트를 사용하여 웹 제작가능 / 계속 공부중</li>
+                <li>Ps/Ai : 사진편집,배너,로고,아이콘 등 작업가능</li>
+                <li>
+                  Figma : 웹디자인 프로토타입 제작 가능 / 팀프로젝트 협업 경험
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="second" data-anchor="Page 2">
-        <div class="green">
-          <div class="green-photo"></div>
-          <div class="green-info">
-            <p>2022/08 - 2023/02</p>
-            <p>
-              기업요구를 반영한 디지털비즈니스 웹앱(UX)디자인 & 개발자 양성과정
-              수료
-            </p>
-            <br />
-            <p>
-              html, css, js, 포토샵, 일러스트, 피그마, 마케팅, 구글 애널리틱스
-              등을<br />
-              배우고 실습하며 두번의 팀프로젝트와 발표후 학원수업을 마무리
-              하였습니다.
-            </p>
+      <!-- 메인 끝 -->
+      <!-- 포폴 -->
+      <!-- 팀 -->
+      <section class="team" id="team">
+        <div class="teamwrap">
+          <div class="team-title">
+            <h1>Team-Project</h1>
           </div>
-        </div>
-        <div class="education">
-          <div class="education-photo"></div>
-          <div class="education-info">
-            <p>영남고등학교 63회 졸업</p>
-            <p>경북대학교 생물산업기계공학과 중퇴</p>
-          </div>
+          <ul class="team-choice">
+            <li class="active">생로랑 리사이트</li>
+            <li>HYFT 프로젝트</li>
+          </ul>
+          <ul class="team-detail">
+            <li class="team-detail-list">
+              <div class="team-detail-list-left">
+                <img src="./images/saintmockup.png" alt="" />
+              </div>
+              <div class="team-detail-list-right">
+                <ul>
+                  <li>
+                    <h2>생로랑 리사이트</h2>
+                  </li>
+                  <li>
+                    <p>맡은파트 : 메인, 제품전체/상세, 매장찾기, 고객서비스</p>
+                  </li>
+                  <li>
+                    <p>
+                      설명 : 첫번째 팀 프로젝트, 생로랑 사이트가 다른
+                      명품사이트들 보다 부족하다 생각하여 리사이트 주제로 선정
+                    </p>
+                  </li>
+                  <li>
+                    <p>참여인원 : 4명</p>
+                  </li>
+                </ul>
+                <div class="team-detail-list-right-btn">
+                  <a
+                    href="https://sanghyuk95.github.io/first_project/choi/mainPage.html"
+                    target="_blank"
+                    >사이트 보러가기</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="team-detail-list active">
+              <div class="team-detail-list-left">
+                <img src="./images/hyhtmockup.png" alt="" />
+              </div>
+              <div class="team-detail-list-right">
+                <ul>
+                  <li>
+                    <h2>HYFT 프로젝트</h2>
+                  </li>
+                  <li>
+                    <p>
+                      맡은파트 : 랜딩페이지, 로그인/회원가입, 마이페이지,
+                      매거진, 헤더/푸터 제작, 백엔드
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      설명 : 두번째 팀 프로젝트, 감정을 주제로 커뮤니티와
+                      쇼핑몰이 결합된 사이트, 노드js와 mySQL을 사용하여 실제
+                      서비스 구축
+                    </p>
+                  </li>
+                  <li>
+                    <p>참여인원 : 4명</p>
+                  </li>
+                </ul>
+                <div class="team-detail-list-right-btn">
+                  <a
+                    href="https://sanghyuk95.github.io/HYFT/sanghyuk/index.html"
+                    target="_blank"
+                    >사이트 보러가기</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
-      <section class="portfolio" data-anchor="Page 3">
-        <div class="pf-box">
-          <div class="pf-box-photo">
-            <div class="swiper mySwiper1">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide first1"></div>
-                <div class="swiper-slide first2"></div>
-                <div class="swiper-slide first3"></div>
-                <div class="swiper-slide first4"></div>
-                <div class="swiper-slide first5"></div>
+      <!-- 솔로 -->
+      <section class="solo" id="solo">
+        <div class="solowrap">
+          <div class="solo-title">
+            <h1>Solo-Project</h1>
+          </div>
+          <ul class="solo-choice">
+            <li class="active">날씨맞춤옷추천</li>
+            <li>MAST 로고</li>
+            <li>도시락통</li>
+            <li>이마트24</li>
+          </ul>
+          <ul class="solo-detail">
+            <li class="solo-detail-list">
+              <div class="solo-detail-list-left">
+                <img src="./images/ai.png" alt="" />
               </div>
-            </div>
-          </div>
-          <div class="pf-box-info">
-            <h1>생로랑 리사이트</h1>
-            <div class="pf-box-info-detail">
-              <p>학원에서 한 첫번째 팀 프로젝트입니다</p>
-              <p>
-                생로랑의 사이트가 다른 명품 사이트에 비하면 부족한 부분이 다수
-                보여 작업 하게 되었습니다.
-              </p>
-              <p>
-                맡은 파트 : 메인,제품전체,제품상세,매장찾기,<br />고객서비스
-              </p>
-            </div>
-          </div>
-          <div class="pf-box-btn">
-            <a
-              href="https://sanghyuk95.github.io/first_project/choi/mainPage.html"
-              target="_blank"
-              ><button>보러가기</button></a
-            >
-          </div>
-        </div>
-        <div class="pf-box">
-          <div class="pf-box-photo">
-            <div class="swiper mySwiper2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide hyft1"></div>
-                <div class="swiper-slide hyft2"></div>
-                <div class="swiper-slide hyft3"></div>
-                <div class="swiper-slide hyft4"></div>
-                <div class="swiper-slide hyft5"></div>
+              <div class="solo-detail-list-right">
+                <ul>
+                  <li>
+                    <p>프로젝트명 : 생로랑 리사이트</p>
+                  </li>
+                  <li>
+                    <p>맡은파트 : 메인,제품전체/상세,매장찾기,고객서비스</p>
+                  </li>
+                  <li>
+                    <p>
+                      설명 : 학원에서한 첫 프로젝트,생로랑 사이트가 다른
+                      명품사이트들 보다 부족하다 생각하여 리사이트 주제로 선정
+                    </p>
+                  </li>
+                </ul>
+                <div class="solo-detail-list-right-btn">
+                  <a href="">사이트 보러가기</a>
+                  <a href="">깃허브 보러가기</a>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="pf-box-info">
-            <h1>HYFT</h1>
-            <div class="pf-box-info-detail">
-              <p>
-                두번째 협업 프로젝트로 감정을 주제로 해서 커뮤니티와 쇼핑몰이
-                결합된 사이트를 제작 하였습니다.
-              </p>
-              <p>
-                NodeJS와 mySQL을 사용해 실제 회원가입 및 게시판기능을 만들면서
-                백엔드에 대한 이해도가 높아졌습니다.
-              </p>
-              <p>
-                맡은파트 : 랜딩페이지,로그인,마이페이지,<br />매거진,헤더/푸터제작,백엔드
-                전체
-              </p>
-            </div>
-          </div>
-          <div class="pf-box-btn">
-            <a
-              href="https://sanghyuk95.github.io/HYFT/sanghyuk/index.html"
-              target="_blank"
-              ><button>보러가기</button></a
-            >
-          </div>
-        </div>
-        <div class="pf-box">
-          <div class="pf-box-photo">
-            <div class="swiper mySwiper3">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide design1"></div>
-                <div class="swiper-slide design2"></div>
-                <div class="swiper-slide design3"></div>
+            </li>
+            <li class="solo-detail-list active">
+              <div class="solo-detail-list-left">
+                <img src="./images/logomain.jpg" alt="" style="height: 80%" />
               </div>
-            </div>
-          </div>
-          <div class="pf-box-info desgin-info">
-            <h1>포토샵,일러스트</h1>
-            <p>게이밍기어 브랜드 런칭 로고 공모전 제출작품</p>
-            <p>할리데이비슨 코리아 리사이트</p>
-          </div>
-          <div class="pf-box-btn btn2">
-            <a href="./images/logo.jpg" target="_blank"
-              ><button>로고 보러가기</button></a
-            >
-            <a href="./images/resite.png" target="_blank"
-              ><button>리사이트 보러가기</button></a
-            >
-          </div>
-        </div>
-        <div class="pf-box">
-          <div class="pf-box-photo">
-            <div class="swiper mySwiper4">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide ect1"></div>
-                <div class="swiper-slide ect2"></div>
+              <div class="solo-detail-list-right">
+                <ul>
+                  <li>
+                    <h2>MAST 로고</h2>
+                  </li>
+                  <li>
+                    <p>
+                      게이밍기어 브랜드 cox의 새 브랜드 MAST의 로고 공모전
+                      제출작
+                    </p>
+                  </li>
+                  <li>
+                    <p>돛대를 의미하는 단어 MAST와 어울리게 디자인</p>
+                  </li>
+                </ul>
+                <div class="solo-detail-list-right-btn">
+                  <div class="mast-detail">자세히 보기</div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="pf-box-info desgin-info">
-            <h1>기타작업물</h1>
-            <p>클론코딩 : 도시락통 사이트</p>
-            <p>
-              리액트 웨더 : 리액트를 사용해 날씨,chatGPT,번역api를 사용한 날씨에
-              따른 옷 추천 기능
-            </p>
-          </div>
-          <div class="pf-box-btn btn2">
-            <a href="https://sanghyuk95.github.io/dosiraktong/" target="_blank">
-              <button>클론코딩</button></a
-            >
-            <a href="./images/weather.mp4" target="_blank"
-              ><button>리엑트 웨더</button></a
-            >
-          </div>
+            </li>
+            <li class="solo-detail-list active">
+              <div class="solo-detail-list-left">
+                <img src="./images/ai.png" alt="" />
+              </div>
+              <div class="solo-detail-list-right">
+                <ul>
+                  <li>
+                    <h2>도시락통 클론코딩</h2>
+                  </li>
+                  <li>
+                    <p>도시락통 사이트의 클론코딩</p>
+                  </li>
+                </ul>
+                <div class="solo-detail-list-right-btn">
+                  <a
+                    href="https://sanghyuk95.github.io/dosiraktong/"
+                    target="_blank"
+                    >사이트 보러가기</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="solo-detail-list active">
+              <div class="solo-detail-list-left">
+                <img src="./images/ai.png" alt="" />
+              </div>
+              <div class="solo-detail-list-right">
+                <ul>
+                  <li>
+                    <h2>이마트 24 클론코딩</h2>
+                  </li>
+                  <li>
+                    <p>이마트24 사이트 클론코딩</p>
+                  </li>
+                </ul>
+                <div class="solo-detail-list-right-btn">
+                  <a
+                    href="https://sanghyuk95.github.io/emart-24/"
+                    target="_blank"
+                    >사이트 보러가기</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
+      <!-- 포폴 끝 -->
+    </div>
+    <!-- 모달 -->
+    <div class="modal mast active">
+      <div class="modal-x">
+        <i class="fa-solid fa-xmark modal-x-btn"></i>
+      </div>
+      <div class="modal-img">
+        <img src="./images/logo.jpg" alt="" />
+      </div>
     </div>
   </body>
-  <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="js/new.js"></script>
 </html>
