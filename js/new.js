@@ -28,11 +28,19 @@ $choiceSolo.forEach((item,idx) => {
 
 const $mast = document.querySelector('.mast')
 const $mastDetail = document.querySelector('.mast-detail')
-const $mastX = document.querySelector('.modal-x-btn')
+const $modalX = document.querySelectorAll('.modal-x-btn')
+const $weather = document.querySelector('.weather')
+const $weatherDetail = document.querySelector('.weather-detail')
+
 $mastDetail.addEventListener('click', () => {
   $mast.classList.remove('active')
 })
-$mastX.addEventListener('click', () => {
-  $mast.classList.add('active')
-  
+$weatherDetail.addEventListener('click', () => {
+  $weather.classList.remove('active')
+})
+$modalX.forEach((item) => {  
+  item.addEventListener('click', () => {
+    $mast.classList.add('active')
+    $weather.classList.add('active')
+  })
 })
