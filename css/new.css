@@ -159,6 +159,7 @@ body {
   flex-direction: column;
   gap: 10px;
   margin-bottom: 30px;
+  padding: 10px;
 }
 .main-right-personal-box > li {
   display: flex;
@@ -171,11 +172,14 @@ body {
   display: block;
 }
 .skills img {
-  height: 90px;
+  height: 80px;
   margin: 10px;
 }
 .skills .toobig {
-  height: 80px;
+  height: 70px;
+}
+.skills .toobig2 {
+  height: 50px;
 }
 @media (max-width: 1440px) {
   .wrap {
